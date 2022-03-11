@@ -77,9 +77,23 @@
                 <h1>Reported posts</h1>
             </div>
         </main>
+        <section style="margin: 5% 15%;">
+            <h4>JavaScript এ Event Loop কি কাজ করে? </h4>
+            <p>উত্তরঃ Javascript হলো single-threaded প্রোগ্রাম যার মানে শুধুমাত্র একটি thread যা প্রোগ্রাম চালানোর সমস্ত কাজ করে। যেহেতু এটি একটি single-threaded প্রোগ্রাম, যখনই একাধিক কাজ করতে বলা হয় single-threaded প্রোগ্রামটি নিজে থেকে চালাতে পারে না। সুতরাং এটি প্রোগ্রামগুলির একটি queue তৈরি করে। তাদের event queue বলা হয়। event queue থেকে javascript FIFO (first in first out) পদ্ধতিতে প্রোগ্রাম চালায়। বিশেষ ক্ষেত্রে, জাভাস্ক্রিপ্ট FIFO পদ্ধতি অনুসরণ করে না বরং এটি ঘোষিত গুরুত্বপূর্ণ ফাংশনগুলিকে অগ্রাধিকার দেয়। এই সমস্ত ফাংশন একটি লুপে চলে তাই হলো event loop।</p>
+
+            <h4>Local storage এবং Session storage এর মধ্যে পার্থক্য কি?</h4>
+            <p>উত্তরঃ local storage এর সাথে session storage এর কিছু মিল আছে। তাদের মধ্যে পার্থক্যও আছে। session storage শুধুমাত্র একটি নির্দিষ্ট ট্যাবে কাজ করে। যদি সেই ট্যাবটি বন্ধ করা হয় তবে সংরক্ষিত ডেটা মুছে যায়। অন্যদিকে, local storage ডেটা সংরক্ষণ করা হয় এবং ট্যাবটি বন্ধ থাকলে মুছে যায় না। ট্যাবটি আবার খোলা হলে ডেটা সংরক্ষণ থাকে। সঞ্চিত ডেটা মুছে ফেলার জন্য ব্যবহারকারীকে devtool ব্যবহার করে ম্যানুয়ালি ডেটা মুছতে হবে।</p>
+        </section>
         <footer></footer>
 
         <!-- add javascript  file  -->
         <script src="./js/app.js"></script>
     </body>
 </html>
+
+
+
+
+
+
+
