@@ -77,7 +77,7 @@
                 <h1>Reported posts</h1>
             </div>
         </main>
-        <section style="margin: 5% 15%;">
+        <section id="qna" style="margin: 5% 15%;">
             <h4>JavaScript এ Event Loop কি কাজ করে? </h4>
             <p>উত্তরঃ Javascript হলো single-threaded প্রোগ্রাম যার মানে শুধুমাত্র একটি thread যা প্রোগ্রাম চালানোর সমস্ত কাজ করে। যেহেতু এটি একটি single-threaded প্রোগ্রাম, যখনই একাধিক কাজ করতে বলা হয় single-threaded প্রোগ্রামটি নিজে থেকে চালাতে পারে না। সুতরাং এটি প্রোগ্রামগুলির একটি queue তৈরি করে। তাদের event queue বলা হয়। event queue থেকে javascript FIFO (first in first out) পদ্ধতিতে প্রোগ্রাম চালায়। বিশেষ ক্ষেত্রে, জাভাস্ক্রিপ্ট FIFO পদ্ধতি অনুসরণ করে না বরং এটি ঘোষিত গুরুত্বপূর্ণ ফাংশনগুলিকে অগ্রাধিকার দেয়। এই সমস্ত ফাংশন একটি লুপে চলে তাই হলো event loop।</p>
 

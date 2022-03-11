@@ -145,6 +145,7 @@ const showPosts = (posts) => {
 
 const displayLikedPosts = () => {
   document.getElementById( "liked" ).textContent = "";
+  document.getElementById( "qna" ).textContent = "";
     const likedPosts = getLikedPosts();
     likedPosts.forEach((post) => {
         const div = createPost(post);
@@ -154,6 +155,7 @@ const displayLikedPosts = () => {
 
 const displayReportedPosts = () => {
   document.getElementById( "reported" ).textContent = "";
+  document.getElementById( "qna" ).textContent = "";
     const reportedPosts = getReportedPosts();
  
     
